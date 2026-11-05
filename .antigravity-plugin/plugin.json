@@ -1,0 +1,8 @@
+{
+  "name": "cosend",
+  "version": "0.2.0",
+  "description": "Run your business's WhatsApp inbox, WhatsApp campaigns, templates, automation and AI receptionist from your assistant, over MCP.",
+  "author": { "name": "Cosend", "url": "https://cosend.app" },
+  "homepage": "https://cosend.app/mcp",
+  "repository": "https://github.com/cosendhq/cosend-plugin"
+}

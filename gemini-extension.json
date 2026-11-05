@@ -1,0 +1,10 @@
+{
+  "name": "cosend",
+  "version": "0.2.0",
+  "description": "Cosend runs your business's WhatsApp from Gemini CLI over MCP: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist. Every send, campaign, template, automation change and switch-on comes to you as a preview you approve.",
+  "mcpServers": {
+    "cosend": {
+      "httpUrl": "https://mcp.cosend.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "cosend": {
+      "serverUrl": "https://mcp.cosend.app/mcp"
+    }
+  }
+}

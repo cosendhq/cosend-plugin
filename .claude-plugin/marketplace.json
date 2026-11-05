@@ -1,0 +1,14 @@
+{
+  "name": "cosend",
+  "description": "Cosend's plugin for your business's WhatsApp: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist, over MCP.",
+  "owner": { "name": "Cosend" },
+  "metadata": { "version": "0.2.0" },
+  "plugins": [
+    {
+      "name": "cosend",
+      "source": "./",
+      "description": "Cosend runs your business's WhatsApp from your AI assistant over MCP: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist. Every send, campaign, template, automation change and switch-on comes to you as a preview you approve.",
+      "category": "productivity"
+    }
+  ]
+}
