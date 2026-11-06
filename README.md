@@ -128,12 +128,14 @@ Cosend through OAuth the first time it connects.
 
 | File | Read by |
 | - | - |
-| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code, claude.ai, Claude Desktop, Cowork, Grok Build |
+| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code, claude.ai, Claude Desktop, Cowork |
+| `.grok-plugin/plugin.json`, `.mcp.json` | Grok Build |
 | `.claude-plugin/marketplace.json` | Claude Code, as the Cosend marketplace |
 | `plugin.json`, `mcp.json` | ChatGPT, Codex, Perplexity |
 | `.agents/plugins/marketplace.json` | ChatGPT and Codex, as the Cosend marketplace |
 | `gemini-extension.json` | Gemini CLI |
 | `.antigravity-plugin/plugin.json`, `mcp_config.json` | Antigravity |
+| `assets/logo.svg` | Grok Build and Antigravity: the Cosend logo |
 | `skills/cosend/SKILL.md` | all of them |
 | `skills/cosend/agents/openai.yaml` | ChatGPT and Codex: the skill's link to the Cosend connector |
 
@@ -143,6 +145,13 @@ The plugin is Markdown and JSON files, and your data stays in your Cosend worksp
 the assistant to do goes to that workspace through `mcp.cosend.app`, with the permissions you
 approved when you signed in, and Cosend acts on it there. Cosend's privacy policy is at
 [cosend.app/privacy](https://cosend.app/privacy).
+
+### Network endpoints and credentials
+
+- **Endpoints:** the plugin calls one MCP server, `https://mcp.cosend.app/mcp`, and signs in at
+  `https://auth.cosend.app`. Both are Cosend's own.
+- **Credentials:** an OAuth 2.1 sign-in with PKCE, in your browser, to your Cosend account. The
+  plugin holds no API key, runs no local code and reads no file on your machine.
 
 ## License
 
