@@ -26,16 +26,17 @@ choose the next step.
 - The 24-hour customer service window opens when the customer writes and starts again with each
   message from them. Inside it, any message goes out; after it, an approved template reaches the
   customer.
-- Every send, campaign, template, automation change and switch-on comes to the person as a preview
-  they approve. The tools that work this way are `send_message`, `send_campaign`,
-  `submit_template`, `change_template`, `upsert_automation`, `deploy_automation`,
-  `set_automation_state` (switching on), `manage_automation` (deleting, rolling back),
+- Every message, campaign and template submission, every automation deploy and switch-on, and the
+  other changes below come to the person as a preview they approve. The tools that work this way
+  are `send_message`, `send_campaign`, `submit_template`, `change_template`, `upsert_automation`,
+  `deploy_automation`, `set_automation_state` (switching on), `manage_automation` (deleting, rolling back),
   `run_automation`, `update_assistant_persona`, `change_knowledge` (removing a source),
   `update_number`, `manage_integration` (removing a number), `delete_contact`, `merge_contacts`,
   `contact_fields` (deleting), `import_contacts` (running), `chat_notes` (deleting),
   `inbox_views` (deleting) and `bulk_update_conversations`. The first call returns a preview and a
   `confirmation_token`; the same call again with that token does the thing. Switching an
-  automation off takes effect at once.
+  automation off takes effect at once. A new automation is saved switched off, and renaming,
+  copying, testing and building one from a description run straight away, with no preview.
 - Connecting a WhatsApp number, connecting integrations, choosing Google files, changing plan and
   adding a card happen on a set-up link the person opens in their own browser. Passwords, card
   numbers and Meta sign-ins belong on that page, typed by the person, so the chat carries the link.

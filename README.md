@@ -36,10 +36,11 @@ use every Cosend tool well.
   connects Google Sheets, Google Calendar, Calendly, Shopify, Stripe and more, and reads reports on
   response times, the AI receptionist and your team.
 
-Every send, campaign, template, automation change and switch-on comes to you as a preview you
-approve. Connecting a WhatsApp number, connecting an app and billing happen on a secure set-up
-link you open in your own browser. Every tool is listed on [cosend.app/mcp](https://cosend.app/mcp),
-and how to connect any MCP client is on [cosend.app/docs/mcp](https://cosend.app/docs/mcp).
+Every message, campaign and template submission, and every automation deploy and switch-on, comes
+to you as a preview you approve. New automations are saved switched off. Connecting a WhatsApp
+number, connecting an app and billing happen on a secure set-up link you open in your own browser.
+Every tool is listed on [cosend.app/mcp](https://cosend.app/mcp), and how to connect any MCP client
+is on [cosend.app/docs/mcp](https://cosend.app/docs/mcp).
 
 ## Install
 
@@ -128,12 +129,14 @@ Cosend through OAuth the first time it connects.
 
 | File | Read by |
 | - | - |
-| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code, claude.ai, Claude Desktop, Cowork, Grok Build |
+| `.claude-plugin/plugin.json`, `.mcp.json` | Claude Code, claude.ai, Claude Desktop, Cowork |
+| `.grok-plugin/plugin.json`, `.mcp.json` | Grok Build |
 | `.claude-plugin/marketplace.json` | Claude Code, as the Cosend marketplace |
 | `plugin.json`, `mcp.json` | ChatGPT, Codex, Perplexity |
 | `.agents/plugins/marketplace.json` | ChatGPT and Codex, as the Cosend marketplace |
 | `gemini-extension.json` | Gemini CLI |
 | `.antigravity-plugin/plugin.json`, `mcp_config.json` | Antigravity |
+| `assets/logo.svg` | Grok Build and Antigravity: the Cosend logo |
 | `skills/cosend/SKILL.md` | all of them |
 | `skills/cosend/agents/openai.yaml` | ChatGPT and Codex: the skill's link to the Cosend connector |
 
@@ -143,6 +146,13 @@ The plugin is Markdown and JSON files, and your data stays in your Cosend worksp
 the assistant to do goes to that workspace through `mcp.cosend.app`, with the permissions you
 approved when you signed in, and Cosend acts on it there. Cosend's privacy policy is at
 [cosend.app/privacy](https://cosend.app/privacy).
+
+### Network endpoints and credentials
+
+- **Endpoints:** the plugin calls one MCP server, `https://mcp.cosend.app/mcp`, and signs in at
+  `https://auth.cosend.app`. Both are Cosend's own.
+- **Credentials:** an OAuth 2.1 sign-in with PKCE, in your browser, to your Cosend account. The
+  plugin holds no API key, runs no local code and reads no file on your machine.
 
 ## License
 

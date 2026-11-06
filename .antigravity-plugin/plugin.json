@@ -1,8 +1,18 @@
 {
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "cosend",
+  "displayName": "Cosend",
   "version": "0.2.0",
-  "description": "Run your business's WhatsApp inbox, WhatsApp campaigns, templates, automation and AI receptionist from your assistant, over MCP.",
+  "description": "Run your business's WhatsApp from Antigravity: the shared inbox, campaigns, templates, automation and the AI receptionist, every send previewed first.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Show me the WhatsApp chats waiting for a reply today.",
+    "Set up a WhatsApp campaign for our weekend offer to our VIP customers.",
+    "Build an automation that welcomes first-time customers and answers their first questions."
+  ],
   "author": { "name": "Cosend", "url": "https://cosend.app" },
   "homepage": "https://cosend.app/mcp",
-  "repository": "https://github.com/cosendhq/cosend-plugin"
+  "repository": "https://github.com/cosendhq/cosend-plugin",
+  "license": "MIT",
+  "keywords": ["cosend", "whatsapp", "whatsapp inbox", "whatsapp campaigns", "whatsapp automation", "ai receptionist"]
 }
