@@ -7,7 +7,7 @@
     {
       "name": "cosend",
       "source": "./",
-      "description": "Cosend runs your business's WhatsApp from your AI assistant over MCP: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist. Every send, campaign, template, automation change and switch-on comes to you as a preview you approve.",
+      "description": "Cosend runs your business's WhatsApp from your AI assistant over MCP: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist. Every message, campaign and template submission, and every automation deploy and switch-on, comes to you as a preview you approve. New automations are saved switched off.",
       "category": "productivity"
     }
   ]

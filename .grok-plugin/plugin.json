@@ -1,7 +1,7 @@
 {
   "name": "cosend",
   "version": "0.2.0",
-  "description": "Cosend runs your business's WhatsApp from Grok Build over MCP: a shared WhatsApp inbox on the number you already use, WhatsApp campaigns to saved audiences, WhatsApp templates submitted for Meta's review, WhatsApp automation built from a plain description, and an AI receptionist trained on your website and files. Every send, campaign, template, automation change and switch-on comes to you as a preview you approve. Sign in with your Cosend account on first connect.",
+  "description": "Cosend runs your business's WhatsApp from Grok Build over MCP: a shared WhatsApp inbox on the number you already use, WhatsApp campaigns to saved audiences, WhatsApp templates submitted for Meta's review, WhatsApp automation built from a plain description, and an AI receptionist trained on your website and files. Every message, campaign and template submission, and every automation deploy and switch-on, comes to you as a preview you approve. New automations are saved switched off. Sign in with your Cosend account on first connect.",
   "author": { "name": "Cosend", "url": "https://cosend.app" },
   "homepage": "https://cosend.app/mcp",
   "repository": "https://github.com/cosendhq/cosend-plugin",
