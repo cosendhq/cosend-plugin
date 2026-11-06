@@ -27,9 +27,9 @@ choose the next step.
   message from them. Inside it, any message goes out; after it, an approved template reaches the
   customer.
 - Every message, campaign and template submission, every automation deploy and switch-on, and the
-  other changes below come to the person as a preview they approve. The tools that work this way are `send_message`, `send_campaign`,
-  `submit_template`, `change_template`, `upsert_automation`, `deploy_automation`,
-  `set_automation_state` (switching on), `manage_automation` (deleting, rolling back),
+  other changes below come to the person as a preview they approve. The tools that work this way
+  are `send_message`, `send_campaign`, `submit_template`, `change_template`, `upsert_automation`,
+  `deploy_automation`, `set_automation_state` (switching on), `manage_automation` (deleting, rolling back),
   `run_automation`, `update_assistant_persona`, `change_knowledge` (removing a source),
   `update_number`, `manage_integration` (removing a number), `delete_contact`, `merge_contacts`,
   `contact_fields` (deleting), `import_contacts` (running), `chat_notes` (deleting),

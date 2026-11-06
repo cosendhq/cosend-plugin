@@ -37,9 +37,10 @@ use every Cosend tool well.
   response times, the AI receptionist and your team.
 
 Every message, campaign and template submission, and every automation deploy and switch-on, comes
-to you as a preview you approve. New automations are saved switched off. Connecting a WhatsApp number, connecting an app and billing happen on a secure set-up
-link you open in your own browser. Every tool is listed on [cosend.app/mcp](https://cosend.app/mcp),
-and how to connect any MCP client is on [cosend.app/docs/mcp](https://cosend.app/docs/mcp).
+to you as a preview you approve. New automations are saved switched off. Connecting a WhatsApp
+number, connecting an app and billing happen on a secure set-up link you open in your own browser.
+Every tool is listed on [cosend.app/mcp](https://cosend.app/mcp), and how to connect any MCP client
+is on [cosend.app/docs/mcp](https://cosend.app/docs/mcp).
 
 ## Install
 
