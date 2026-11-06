@@ -74,7 +74,7 @@ To change any of these, edit the package, run the build script and upload the ne
 
 | Field | Paste |
 |---|---|
-| Reviewer login URL | `https://app.cosend.app/signin` |
+| Reviewer login URL | `https://dashboard.cosend.app/signin` |
 | Reviewer email and password | the reviewer account's, typed into the secure form by you |
 | Workspace | `Cosend Review` |
 | Sign-in instructions | `Sign in with the email and password above. On Cosend's consent screen keep every permission ticked and select Approve. The workspace Cosend Review holds sample data: a WhatsApp test number, conversations with our own test phones, contacts, approved templates, a saved audience named VIP, automations with this week's runs and the AI receptionist. Each send and each campaign returns a preview first; the second call with its confirmation_token sends it, and messages reach phones we own.` |
