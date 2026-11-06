@@ -3,7 +3,15 @@
   "mcpServers": {
     "cosend": {
       "type": "streamable-http",
-      "url": "https://mcp.cosend.app/mcp"
+      "url": "https://mcp.cosend.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": { "mode": "cimd" }
+          }
+        }
+      }
     }
   }
 }

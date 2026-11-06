@@ -23,8 +23,17 @@
         "shortDescription": "WhatsApp inbox and campaigns",
         "longDescription": "Cosend is the WhatsApp platform businesses run their customer conversations on. It puts your WhatsApp number in a shared inbox for the whole team while the WhatsApp Business app keeps working on your phone, and brings WhatsApp campaigns, WhatsApp templates, WhatsApp automation and an AI receptionist into the same workspace.\n\nWith Cosend in your assistant, you read, search and answer every WhatsApp chat, assign chats, snooze them, add internal notes and pass chats between teammates. You set up WhatsApp campaigns: pick a saved audience and an approved marketing template, see who gets it and Meta's list price, then send it or schedule it. You write WhatsApp templates, check them against Meta's rules and submit them for Meta's review. You keep contacts, tags, custom fields, CSV imports and consent records in order. You build WhatsApp automations from ready-made recipes or from a plain description, test them on a sample customer, deploy them and switch them on, and you see every run step by step. You train the AI receptionist on your website, files and Google Maps listing, set its persona and test it. You manage your WhatsApp numbers, your business profile and integrations such as Google Sheets, Google Calendar, Calendly, Shopify and Stripe, and you read reports on response times, the AI receptionist, each number and each teammate.\n\nEvery send, campaign, template, automation change and switch-on comes to you as a preview you approve. Connecting a WhatsApp number, connecting an app and billing happen on a secure set-up link you open in your own browser.",
         "developerName": "Cosend",
-        "category": "Productivity",
-        "capabilities": ["Read", "Write"],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/icon.png",
+        "brandColor": "#FF6700",
+        "category": "Communication",
+        "capabilities": [
+          "Read and answer WhatsApp chats",
+          "Run WhatsApp campaigns",
+          "Write and submit WhatsApp templates",
+          "Build WhatsApp automations",
+          "Train the AI receptionist"
+        ],
         "websiteURL": "https://cosend.app/mcp",
         "supportURL": "https://cosend.app/support",
         "privacyPolicyURL": "https://cosend.app/privacy",
@@ -34,6 +43,61 @@
           "Set up a WhatsApp campaign for our weekend offer to our VIP customers.",
           "Build an automation that welcomes first-time customers and answers their first questions."
         ]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "See the WhatsApp inbox at a glance",
+              "prompt": "Show me the WhatsApp chats waiting for a reply today.",
+              "tools_triggered": "get_inbox_overview, list_conversations",
+              "expected_behavior": "Returns how many chats are waiting, unread and with a 24-hour window closing soon, and lists the unread chats by contact name, with customer text marked as untrusted."
+            },
+            {
+              "description": "Reply in an existing conversation after the person approves the preview",
+              "prompt": "Reply to Test Customer in WhatsApp with our order_ready template.",
+              "tools_triggered": "search_conversations, send_message",
+              "expected_behavior": "The first send_message call returns a preview naming Test Customer and the message. After the person approves, the second call with the confirmation token sends it into that existing conversation, and it arrives on the test phone."
+            },
+            {
+              "description": "Set up a campaign to a saved audience and send it once the person approves",
+              "prompt": "Set up a WhatsApp campaign for our weekend offer to the VIP audience, using an approved marketing template.",
+              "tools_triggered": "list_audiences, list_templates, create_campaign, update_campaign, preview_campaign, send_campaign",
+              "expected_behavior": "The check shows who gets the campaign, who is left out and why, and Meta's list price. send_campaign returns a preview; after the person approves it, the campaign sends or is scheduled and appears on the Campaigns page of the Cosend dashboard."
+            },
+            {
+              "description": "Check a WhatsApp template against Meta's rules",
+              "prompt": "Check this WhatsApp template before I submit it: utility, English, body \"Hi {{1}}, your booking for {{2}} is confirmed.\"",
+              "tools_triggered": "template_check",
+              "expected_behavior": "Returns a verdict of fix_first, warnings or ready, with each point located in the template. The template stays a draft."
+            },
+            {
+              "description": "Explain why an automation failed",
+              "prompt": "Did any of my automations fail this week? Tell me why.",
+              "tools_triggered": "list_runs, get_run",
+              "expected_behavior": "Lists each failed run with the step that failed and its error, or reports that every run this week succeeded."
+            }
+          ],
+          "negative": [
+            {
+              "description": "A message on the person's own personal WhatsApp. Cosend serves the business's WhatsApp workspace and replies in the business's existing conversations, so ChatGPT leaves Cosend out of it.",
+              "prompt": "Text my friend Sam on my personal WhatsApp that I'm running late."
+            },
+            {
+              "description": "A question outside WhatsApp. ChatGPT answers it itself and calls no Cosend tool.",
+              "prompt": "What's a good recipe for dinner tonight?"
+            },
+            {
+              "description": "A travel booking. Cosend runs WhatsApp messaging for businesses, so ChatGPT calls no Cosend tool.",
+              "prompt": "Book me a flight to Lisbon next Friday."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Cosend manages a business's WhatsApp workspace. Plan changes and card details happen on Cosend's own billing pages, which the person opens in their own browser."
+      },
+      "publication": {
+        "release_notes": "First release of Cosend for ChatGPT and Codex: the WhatsApp inbox, WhatsApp campaigns, templates, automation and the AI receptionist, with every send and campaign previewed for your approval."
       }
     }
   }
