@@ -2,7 +2,7 @@
 
 Everything Ramee needs to submit Cosend to OpenAI's plugin directory, shared by ChatGPT and
 Codex, in one sitting. The upload is
-[`dist/cosend-chatgpt-0.2.0.zip`](../dist/cosend-chatgpt-0.2.0.zip), built and checked by
+[`dist/cosend-chatgpt-0.2.1.zip`](../dist/cosend-chatgpt-0.2.1.zip), built and checked by
 `python3 scripts/build-chatgpt-zip.py`.
 
 Source of truth: OpenAI's package guide (developers.openai.com/plugins/build/plugins), the
@@ -50,7 +50,7 @@ To change any of these, edit the package, run the build script and upload the ne
    you can submit.
 2. Select **Upload new or existing plugin** and choose your verified business identity, **Cosend**.
    The directory shows this name.
-3. Select **Upload plugin** and choose `cosend-chatgpt-0.2.0.zip`. The plugin detail page opens
+3. Select **Upload plugin** and choose `cosend-chatgpt-0.2.1.zip`. The plugin detail page opens
    with the draft.
 4. **Metadata & Skills:** wait for the metadata and skill scans (skill scans take up to 2 hours)
    and resolve any issue. To fix one, correct the package, rebuild and use **Upload plugin**.

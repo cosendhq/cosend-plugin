@@ -227,7 +227,7 @@ Switch it on when the person says so.
 profile and settings, and `manage_number` refreshes it from Meta or re-checks its payment method.
 
 `list_connectors` lists the apps Cosend connects to, such as Google Sheets, Google Calendar,
-Calendly, Shopify and Stripe. `get_integration_accounts` shows the connected accounts,
+Calendly and Stripe. `get_integration_accounts` shows the connected accounts,
 `read_integration` reads appointments, spreadsheets and form answers from them,
 `create_spreadsheet` makes a new Google Sheet, `list_google_logins` shows the connected Google
 logins, and `manage_integration` adds an account to a number, updates it or tests it.
