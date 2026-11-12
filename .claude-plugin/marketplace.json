@@ -2,7 +2,7 @@
   "name": "cosend",
   "description": "Cosend's plugin for your business's WhatsApp: the shared WhatsApp inbox, WhatsApp campaigns, WhatsApp templates, WhatsApp automation and the AI receptionist, over MCP.",
   "owner": { "name": "Cosend" },
-  "metadata": { "version": "0.2.0" },
+  "metadata": { "version": "0.2.1" },
   "plugins": [
     {
       "name": "cosend",

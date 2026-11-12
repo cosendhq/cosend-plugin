@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "cosend",
   "displayName": "Cosend",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Run your business's WhatsApp from Antigravity: the shared inbox, campaigns, templates, automation and the AI receptionist, every send previewed first.",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [

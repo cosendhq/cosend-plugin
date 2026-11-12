@@ -33,7 +33,7 @@ use every Cosend tool well.
 - **AI receptionist**: sets its persona, trains it on your website, files and Google Maps listing,
   and tests it before customers meet it.
 - **Numbers, integrations and reports**: manages your WhatsApp numbers and business profile,
-  connects Google Sheets, Google Calendar, Calendly, Shopify, Stripe and more, and reads reports on
+  connects Google Sheets, Google Calendar, Calendly, Stripe and more, and reads reports on
   response times, the AI receptionist and your team.
 
 Every message, campaign and template submission, and every automation deploy and switch-on, comes
